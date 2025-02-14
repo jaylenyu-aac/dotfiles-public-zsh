@@ -72,7 +72,6 @@
 		<Setting name="Greeting resources" />
 		<Setting name="Onetime Dialogs" />
 		<Setting name="Show Tree Local">1</Setting>
-		<Setting name="Show Tree Remote">1</Setting>
 		<Setting name="File Pane Layout">0</Setting>
 		<Setting name="File Pane Swap">0</Setting>
 		<Setting name="Filelist directory sort">0</Setting>
@@ -130,10 +129,37 @@
 		<Setting name="Already connected choice">3</Setting>
 		<Setting name="File associations (v2)" platform="mac">/ /System/Applications/TextEdit.app %f</Setting>
 		<Setting name="Remote filelist colwidths">235 105 80 182 80 85</Setting>
-		<Setting name="Splitter positions (v2)">142 -273 500000000 100 100 500000000</Setting>
-		<Setting name="Last automatic update check">2024-11-22 08:24:22</Setting>
-		<Setting name="Update Check New Version" platform="mac">nightly 2024-11-16 https://filezilla-project.org/nightlies/2024-11-16/aarch64-apple-darwin23.1.0/FileZilla3.app.tar.bz2 13891565 sha512 e866f4034384438deba2ab3a2baaaed1616d702ef5967031e6b5d1bcefe7d562a0c91449ac6022d0ab4103290c66bfc8c4f531481794fc487a41c71e6a19de66 sig:r4Rpvn5R2pB9WJJsq3PyG+lUxQWoaSi1PbKzDG46I4uTh/OqvRzNB9/FZvOv0cWJxXYwBRx6EEf7tqs8R0NgAA
-release 3.67.0 https://dl4.cdn.filezilla-project.org/FileZilla_3.67.0_macos-arm64.app.tar.bz2 14008641 sha512 c4251cf0e19eea0bd77f49c2be2e3326b95187969ea9d80de4c51375b946aab703b64cdc647bbf6dd02df657a3b0a9c5e5d66cd2b796151e7a79e93678036312 sig:C9+fmMQt7etjdpVbhBU2CV8HigrmtzKo1qZL6vDxvyyC9EdcIhzUaXcvW4M8AB0i7yRgCvfkj2ho5JmdON21Ag
+		<Setting name="Sitemanager last selected">0/crm</Setting>
+		<Setting name="Remote filelist sortorder">1 3</Setting>
+		<Setting name="Show Tree Remote">0</Setting>
+		<Setting name="Site Manager position">0 -1677 -41 794 439 </Setting>
+		<Setting name="Last automatic update check">2025-01-31 09:59:43</Setting>
+		<Setting name="Update Check New Version" platform="mac">nightly 2025-01-31 https://filezilla-project.org/nightlies/2025-01-31/aarch64-apple-darwin23.1.0/FileZilla3.app.tar.bz2 13885012 sha512 351c328f0fa56a4c56eeefb987d5dc015872fc9d6232a68ae2c9798714ffe5692fca3f70622f0a373a4fe833a4ed16d30d331b9e901f320e51d408f8c1754cd7 sig:KOgQDN/YJI3q4STQGLn4+ZCnZ8kSxkou7K9FY/zw8yMz2CwaKtnYRDpjzVuwU0nzJVNiCpzEbODyoCfqCPixDQ
+release 3.68.1 https://dl4.cdn.filezilla-project.org/FileZilla_3.68.1_macos-arm64.app.tar.bz2 13889265 sha512 8a1da51ee75a6721e94bb71f381659f9e80c735a62577154d3a636a8e58e862c219f31a2fe3a710d66f98c16506e113b0525b2805832d3f04bd42a1013d8fc0b sig:o6KFLo23fApMo9Ror4hjuMnWrmMnRgraar5Z83UI419Ay9k9K3q2bd2wPujlWlkwN+u+G6BT1frMYd4caP0fDg
+
+3.68.1 (2024-11-04)
+
++ macOS: Fixed a build issue affecting App Notarization on arm64
+- Updated translations
+
+3.68.0 (2024-10-31)
+
++ Added option to always refresh remote directory listings when starting a recursive operation
+- Changing logfile settings no longer requires a restart of FileZilla
+- Fixed a display issue with special characters in usernames
+- MSW: Fixed local file list not updating after renaming or deleting items
+- SFTP: Update interval of transfer progress during uploads should now be more consistent on very slow connections
+- Updated to libfilezilla 0.49.0
+
+3.67.1 (2024-07-10)
+
+- MSW: Fixed an issue with confirmation dialogs for file deletion not being modal
+- Updated to libfilezilla 0.48.1
+
+3.67.1-rc1 (2024-06-27)
+
+- Fixed an issue migrating old queue files if several older versions have been skipped
+- Updated to libfilezilla 0.48.0
 
 3.67.0 (2024-04-15)
 
@@ -141,9 +167,8 @@ release 3.67.0 https://dl4.cdn.filezilla-project.org/FileZilla_3.67.0_macos-arm6
 ! Official binaries are now built against GnuTLS 3.8.4
 - Updated to libfilezilla 0.47.0
 </Setting>
-		<Setting name="Site Manager position">0 -2317 -41 794 439 </Setting>
-		<Setting name="Sitemanager last selected">0/crm</Setting>
-		<Setting name="Window position and size">0 -2560 -515 1280 1321 </Setting>
+		<Setting name="Window position and size">0 0 25 1440 781 </Setting>
+		<Setting name="Splitter positions (v2)">284 -385 500000000 50 100 500000000</Setting>
 		<Setting name="Tab data" sensitive="1">
 			<Tabs>
 				<Tab connected="1" selected="1">
@@ -159,10 +184,9 @@ release 3.67.0 https://dl4.cdn.filezilla-project.org/FileZilla_3.67.0_macos-arm6
 					<Name>crm</Name>
 					<Site>0/crm</Site>
 					<RemotePath>1 0 4 home 6 ubuntu 6 docker 12 wim_homepage</RemotePath>
-					<LocalPath>/opt/</LocalPath>
+					<LocalPath>/opt/homebrew/</LocalPath>
 				</Tab>
 			</Tabs>
 		</Setting>
-		<Setting name="Remote filelist sortorder">1 3</Setting>
 	</Settings>
 </FileZilla3>
